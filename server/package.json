@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "server nodejs mern reactjs auth",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

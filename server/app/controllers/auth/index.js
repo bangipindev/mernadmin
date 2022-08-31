@@ -14,6 +14,8 @@ const AuthController  = {
 
     Register : async (req,res,next) => {
         const data = {
+            firstname: req.body.firstname,
+            lastname: req.body.lastname,
             username: req.body.username,
             email: req.body.email,
             password: req.body.password,
@@ -27,7 +29,8 @@ const AuthController  = {
         }
     },
     Login : async (req,res,next) => {
-        const {email,password } = req.body ;
+        const email      = req.body.email ;
+        const password   = req.body.password ;
         if (!email || !password  ){
             return next(new ErrorResponse("please provide email & password"))
         }
@@ -45,6 +48,7 @@ const AuthController  = {
             sendToken(user,200,res);
             
         } catch (error) {
+            console.log(error)
             res.status(500).json({
                 success:false,
                 error:error.message
