@@ -5,6 +5,11 @@ import crypto from "crypto";
 const UserModel = (mongoose) => {
   const schema = mongoose.Schema(
     {
+      firstname: {
+        type: String,
+        required: [true, "Please provide a firstname"],
+      },
+      lastname: { type: String, required: [true, "Please provide a lastname"] },
       username: { type: String, required: [true, "Please provide a username"] },
       email: {
         type: String,

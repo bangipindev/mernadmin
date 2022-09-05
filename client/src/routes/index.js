@@ -1,3 +1,4 @@
-import MainRoutes from "./MainRoutes";
+import WebRoute from "./WebRoutes";
+import AdminRoute from "./AdminRoutes";
 
-export { MainRoutes }
+export { WebRoute, AdminRoute }

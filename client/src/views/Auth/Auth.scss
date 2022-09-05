@@ -6,7 +6,7 @@
 }
 
 .login-header {
-    width: 50%;
+    width: 40%;
     margin-left:auto;
     margin-right:auto;
     background: #0e1a35;
@@ -21,8 +21,9 @@
 .login-logo img {
     cursor: pointer;
     max-width: 171px;
-    padding: 23px 15px 22px;
-    width: 100%;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
     text-align: center;
 }
 .login-logo h1 {
@@ -68,8 +69,8 @@
     width: 100%;
     color: #8492af;
     padding: 15px 50px;
-    font-size: 17px;
-    max-width: 80%;
+    font-size: 14px;
+    max-width: 75%;
 }
 
 .login-form label {
@@ -78,15 +79,15 @@
 }
 
 .user input {
-    background: rgba(0, 0, 0, 0) url("https://img.icons8.com/material-outlined/24/undefined/user--v1.png") no-repeat scroll 7px 12px;
+    background: rgba(0, 0, 0, 0) url("https://img.icons8.com/material-outlined/24/undefined/user--v1.png") no-repeat scroll 5px 10px;
 }
 
 .pass input {
-    background: rgba(0, 0, 0, 0) url("https://img.icons8.com/material-outlined/24/undefined/lock--v1.png") no-repeat scroll 7px 12px;
+    background: rgba(0, 0, 0, 0) url("https://img.icons8.com/material-outlined/24/undefined/lock--v1.png") no-repeat scroll 7px 10px;
 }
 
 .mail input {
-    background: rgba(0, 0, 0, 0) url("https://img.icons8.com/material-outlined/24/undefined/new-post.png") no-repeat scroll 4px 12px;
+    background: rgba(0, 0, 0, 0) url("https://img.icons8.com/material-outlined/24/undefined/new-post.png") no-repeat scroll 4px 10px;
 }
 
 .login-signup .tab-content {
@@ -96,7 +97,7 @@
     margin-top: -8px;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
+    width: 40%;
 }
 
 .form-btn {
@@ -115,20 +116,12 @@
     -webkit-box-shadow: 0 2px 8px #d2d2d2;
 }
 
-.form-btn::before {
-    content: "";
-    font-family: FontAwesome;
-    position: absolute;
-    right: 17px;
-    top: 9px;
-}
-
 .form-details {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .tab-content .form {
-    padding:35px 0;
+    padding:10px 0;
 }
 
 

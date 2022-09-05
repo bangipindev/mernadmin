@@ -1,13 +1,19 @@
 import React from 'react'
-import { MainRoutes } from '../routes';
-
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import "./App.scss";
+import { useSelector } from 'react-redux';
+import { AdminRoute, WebRoute } from '../routes';
 
 const App = () => {
+    const { user }                = useSelector(state => state.Authenticated)
     return (
         <>
-           <MainRoutes />
+            {user ? (
+                <AdminRoute />
+            ) : (
+                <WebRoute />
+                ) 
+            }
         </>
     )
 }
