@@ -1,5 +1,4 @@
-import MainRoutes from "./MainRoutes";
-import PrivateRoute from "./PrivateRoute";
-import RouteWithProps from "./RouteWithProps";
+import WebRoute from "./WebRoutes";
+import AdminRoute from "./AdminRoutes";
 
-export { MainRoutes, PrivateRoute, RouteWithProps }
+export { WebRoute, AdminRoute }
