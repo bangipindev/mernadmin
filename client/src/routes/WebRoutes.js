@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import { history } from '../helper'
-import { Home, About, Blog,Login,Register, Header , Footer} from '../views/web'
+import { Home, About, Blog,Login,Register, Header} from '../views/web'
 
 const WebRoute = () => {
     return (
@@ -29,7 +29,6 @@ const WebRoute = () => {
                             </Route>
                         </Switch>
                     </Container>
-                    <Footer />
                 </Route>
             </Switch>
         </Router>
